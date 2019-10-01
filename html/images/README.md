@@ -8,16 +8,16 @@ It should:
 
 PS: here's a list of image URL's in both formats for convenience:
 
-[image_1.jpg]() & [image_1.webp]() <br/>
-[image_2.jpg]() & [image_2.webp]()
+[image_1.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_1.jpg) & [image_1.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_1.webp) <br/>
+[image_2.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_2.jpg) & [image_2.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_2.webp)
 <br/>
-[image_3.jpg]() & [image_3.webp]()
+[image_3.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_3.jpg) & [image_3.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_3.webp)
 <br/>
-[image_4.jpg]() & [image_4.webp]()
+[image_4.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_4.jpg) & [image_4.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_4.webp)
 <br/>
-[image_5.jpg]() & [image_5.webp]()
+[image_5.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_5.jpg) & [image_5.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_5.webp)
 <br/>
-[image_6.jpg]() & [image_6.webp]()
+[image_6.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_6.jpg) & [image_6.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_6.webp)
 
 PS 2: depending on when you're solving this exercise the lazy-load part might not work in every browser. 
 
