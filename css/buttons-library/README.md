@@ -4,7 +4,7 @@ Create a button library to reuse throughout your projects. It should offer suppo
 
 You can think of your own design or if you find yourself lacking inspiration here's the library I'm using in [DevDrive](https://devdrive.io). Implement it **without modifying the HTML**.
 
-<video height="300" style="border: 1px solid grey;" src="https://raw.githubusercontent.com/iampava/practice-exercises/master/css/buttons-library/buttons-library.mp4" muted autoplay loop></video>
+<img height="300" style="border: 1px solid grey;" src="https://raw.githubusercontent.com/iampava/practice-exercises/master/css/buttons-library/buttons-library.gif">
 
 ```html
 <!DOCTYPE html>
