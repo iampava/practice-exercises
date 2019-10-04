@@ -1,12 +1,12 @@
 # HTML Images
 
-Create a simple yet optimized gallery of images.
+Create a simple yet optimized gallery of images
 
 It should:
 * use modern formats (ex: `.webp`) if supported by the browser. Otherwise it should fallback to something everybody understands (ex: `.jpg`)
-* **not** load all images at once, but lazy load the ones not currently in view
+* **not** load all images at once, but lazy load the ones not currently in view (you'll need many more images for this one)
 
-PS: here's a list of image URL's in both formats for convenience:
+PS: here's a list of some image URL's in both formats for convenience:
 
 [image_1.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_1.jpg) & [image_1.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_1.webp) <br/>
 [image_2.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_2.jpg) & [image_2.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_2.webp)
