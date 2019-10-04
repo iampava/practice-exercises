@@ -1,0 +1,72 @@
+:root {
+    --blue: #2980b9;
+    --green: #58af58;
+    --red: #eb4d4b;
+}
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.1em 0.75em;
+    border-radius: 5px;
+    min-width: 6em;
+    min-height: 2.25em;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--blue {
+    background: var(--blue);
+}
+
+.btn--success {
+    background: var(--green);
+}
+
+.btn--danger {
+    background: var(--red);
+}
+
+.btn--outline {
+    background: none;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btn--outline.btn--blue {
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn--outline.btn--success {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.btn--outline.btn--danger {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.btn--loading {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn--loading:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.4em;
+    width: 50%;
+    transform-origin: right;
+    border-top: 1.5px solid;
+    animation: 1.5s ease-in-out btnLoading infinite;
+}
+
+@keyframes btnLoading {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(150%); }
+    100% { transform: translateX(-50%); }
+}

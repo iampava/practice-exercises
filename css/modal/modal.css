@@ -1,0 +1,73 @@
+/* Generic */
+body {
+    font-family: sans-serif;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
+.color-blue {
+    color: #2980b9;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*  */
+.modal {
+    position: fixed;
+    width: 90%;
+    max-width: 60em;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background: #1b1b15;
+    transform: translate(-50%, -50%);
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.modal__content {
+    padding: 10em 5em;
+    text-align: center;
+}
+
+.modal__import-controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.modal__import-controls > * {
+    margin: 1em 0;
+}
+
+.modal__import-controls button {
+    text-align: center;
+    color: inherit;
+    font-size: inherit;
+}
+
+.modal__import-controls img,
+.modal__import-controls svg {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.modal__import-controls span {
+    display: block;
+    margin-top: 0.5em;
+}
+
+@media screen and (max-width: 440px) {
+    .modal__content {
+        padding: 2em 1em;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution | CSS loading-spinner</title>
+    <style> 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .spinner {
+            width: 10em;
+            height: 10em;
+            position: relative;
+            background: #2980b9;
+            padding: 4em;
+        }
+
+        .spinner div {
+            width: 2em;
+            height: 2em;
+            background: #fff;
+            
+        }
+
+        .spinner div:first-child {
+            animation: anim1 2s linear infinite;
+        }
+
+        .spinner div:nth-child(2) {
+            position: absolute;
+            bottom: 4em;
+            right: 4em;
+            animation: anim2 2s linear infinite;
+        }
+
+        @keyframes anim1 {
+            0% { transform: translate(0) rotate(0deg); }
+            25% { transform: translate(8em, 0) rotate(90deg); }
+            50% { transform: translate(8em, 8em) rotate(180deg); }
+            75% { transform: translate(0, 8em) rotate(270deg); }
+            100% { transform: translate(0) rotate(360deg); }
+        }
+
+        @keyframes anim2 {
+            0% { transform: translate(0) rotate(0deg); }
+            25% { transform: translate(-8em, 0) rotate(90deg); }
+            50% { transform: translate(-8em, -8em) rotate(180deg); }
+            75% { transform: translate(0, -8em) rotate(270deg); }
+            100% { transform: translate(0) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
