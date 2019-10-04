@@ -16,16 +16,6 @@ PS: here's a list of some image URL's in both formats for convenience:
 [image_4.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_4.jpg) & [image_4.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_4.webp)
 <br/>
 [image_5.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_5.jpg) & [image_5.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_5.webp)
-<br/>
-[image_6.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_6.jpg) & [image_6.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_6.webp)
-<br/>
-[image_7.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_7.jpg) & [image_7.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_7.webp)
-<br/>
-[image_8.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_8.jpg) & [image_8.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_8.webp)
-<br/>
-[image_9.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_9.jpg) & [image_9.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_9.webp)
-<br/>
-[image_10.jpg](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_10.jpg) & [image_10.webp](https://raw.githubusercontent.com/iampava/practice-exercises/master/html/images/assets/image_10.webp)
 
 PS 2: depending on when you're solving this exercise the lazy-load part might not work in every browser. 
 
