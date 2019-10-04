@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Solution | HTML form</title>
+    </head>
+    <body>
+        <h1>Checkout form</h1>
+        <form method="POST" action="./checkout">
+            <div>
+                <label for="name">Name*</label>
+                <input required type="text" id="name" name="name" />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email*</label>
+                <input required type="email" id="email" name="email" />
+            </div>
+            <br />
+            <div>
+                <label for="adress">Address*</label>
+                <textarea required id="adress" name="adress"></textarea>
+            </div>
+            <br />
+            <div>
+                <label for="paymentMethod"> Payment method*</label>
+                <select required id="paymentMethod" name="paymentMethod">
+                    <option value="" selected> -- </option>
+                    <option value="cash"> Cash </option>
+                    <option value="card"> Card </option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <label> Gender </label> <br />
+                <label for="male"> Male</label>
+                <input type="radio" id="male" name="gender" />
+
+                <label for="female"> Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+            <br />
+            <label>
+                <span>👆 Click to upload photo</span> <br />
+                <input required type="file" hidden name="photo" />
+            </label>
+            <br />
+            <button type="submit">Buy</button>
+        </form>
+    </body>
+</html>
