@@ -15,5 +15,5 @@ let human = {
     }
 }
 
-deepFind(propertyPath); // 333000
+deepFind(propertyPath, human); // 333000
 ```
