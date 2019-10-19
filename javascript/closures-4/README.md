@@ -4,7 +4,7 @@ Write a unary function `genericF` which accepts 1 param:
 
 -   **fn** - a binary function
 
-and returns a function which behaves similarly to `addF` function from [this exercise](https://raw.githubusercontent.com/iampava/practice-exercises/master/javascript/closures-2).
+and returns a function which behaves similarly to `addF` function from [this exercise](https://github.com/iampava/practice-exercises/tree/master/javascript/closures-2).
 
 ```javascript
 let anotherAddF = genericF(add);
