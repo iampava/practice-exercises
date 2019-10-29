@@ -4,4 +4,4 @@ Write the markup for an upload modal and style it to look like in the picture be
 
 <img src="https://raw.githubusercontent.com/iampava/practice-exercises/master/css/modal/modal.png" style="border: 1px solid grey;">
 
-💡 Tip: remember to make it response (the modal should always be in the middle of the screen)
+💡 Tip: remember to make it responsive (the modal should always be in the middle of the screen)
