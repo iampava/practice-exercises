@@ -6,7 +6,7 @@ You should
 * fetch and insert the categories into the page
 * fetch a random joke from the selected category when submitting the form
 
-<img src="https://raw.githubusercontent.com/iampava/practice-exercises/master/css/fetch-chuck-norris/fetch-chuck-norris__example.gif" style="border: 1px solid grey;">
+<img src="https://raw.githubusercontent.com/iampava/practice-exercises/master/javascript/fetch-chuck-norris/fetch-chuck-norris__example.gif" style="border: 1px solid grey;">
 
 
 ```html
