@@ -1,0 +1,25 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    padding: 0.5em;
+}
+
+td[colspan='2'] {
+    color: white;
+    background: #333;
+}
+code {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
