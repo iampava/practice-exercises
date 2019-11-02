@@ -9,5 +9,3 @@
 When the Internet in my hometown library fails, creativity strikes and pursuades me to create an offline canvas game. 😂
 
 <hr/>
-
-PS: I also wrote a <a href="https://iampava.com/articles/the-no-internet-project/">**blog article**</a>  about this
