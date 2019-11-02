@@ -9,7 +9,7 @@ Practice AJAX by integrating the Front-end of this app with the already existing
 
 <p  align='center'>
 
-<img  height=250  src="https://raw.githubusercontent.com/iampava/practice-ajax/master/public/images/screenshot.png" />
+<img  height=250  src="https://raw.githubusercontent.com/iampava/practice-exercises/master/practice-apps/practice-ajax/public/images/screenshot.png" />
 
 </p>
 
