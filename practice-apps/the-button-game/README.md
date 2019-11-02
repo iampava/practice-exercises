@@ -1,4 +1,5 @@
 # JavaScript challenge: The Button Game
+
 Practice your asynchronism and architecture skills by building a button game 🎮! 
 Yes, architecture and button in the same sentence, but trust me: this challenge is not as easy as it seems.
 

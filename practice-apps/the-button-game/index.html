@@ -1,46 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,900" rel="stylesheet" />
+        <link href="landing.css" rel="stylesheet" />
+        <title>The Button Game</title>
+        <meta property="og:url" content="https://iampava.github.io/the-button-game/" />
+        <meta property="og:title" content="The Button Game" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:description"
+            content="Practice your asynchronism and architecture skills by building a button game 🎮! "
+        />
+        <meta property="og:site_name" content="The Button Game" />
+        <meta property="og:locale" content="en_US" />
+        <meta
+            property="og:image"
+            content="https://iampava.github.io/the-button-game/assets/the_button_game_cover.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            name="twitter:image"
+            content="https://iampava.github.io/the-button-game/assets/the_button_game_cover.jpg"
+        />
+        <meta name="twitter:site" content="@aPavaloi" />
+        <meta name="twitter:creator" content="@aPavaloi" />
+        <meta name="twitter:card" content="summary_large_image" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Button Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900" rel="stylesheet">
-    <link href="./src/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <h1> The Button Game </h1>
-        <a href="https://github.com/iampava/the-button-game" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80"
-                viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
-                aria-hidden="true">
-                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                    fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                    fill="currentColor" class="octo-body"></path>
-            </svg></a>
-    </header>
-    <main>
-        <div class="controls">
-            <div class="progress">
-                <span>2/5 clicked</span>
+    <body>
+        <header>
+            <h1><span class="javascript">JavaScript</span> challenge</h1>
+        </header>
+        <main>
+            <div class="cover">
+                <h2>
+                    Practice your <strong>asynchronism</strong> and <strong>architecture</strong> skills by building a
+                    button game 🎮!
+                </h2>
+                <h3>
+                    Yes, architecture and button in the same sentence! Trust me, this challenge is not as easy as it
+                    seems. PS: video solution included at the end!
+                </h3>
+                <video muted autoplay loop>
+                    <source src="assets/gameplay_example.webm" type="video/webm" />
+                    <source src="assets/gameplay_example.mp4" type="video/mp4" />
+                    <p>
+                        Your browser doesn't support HTML5 video. Here is a
+                        <a href="assets/gameplay_example.mp4">link to the video</a> instead.
+                    </p>
+                </video>
             </div>
-            <div class="controls__button-wrapper">
-                <button>Play </button>
-                <button>Pause </button>
-            </div>
-            <p class="controls__timer">00:05</p>
-        </div>
-        <div class="game-area">
-            <button> Click me</button>
-        </div>
-    </main>
-    <footer>
-        Made with ❤ by <a href="https://iampava.com">Pava</a>
-    </footer>
-</body>
+            <p class="dots">How to</p>
+            <ul class="how-to">
+                <li class="visible" style="display: block">
+                    <span class="nr-crt">#0</span>
+                    <p>
+                        Fork the <a href="https://github.com/iampava/the-button-game/">GitHub repo</a> and follow the
+                        instructions in the README to start the project!
+                    </p>
+                    <button data-next="1" class="btn--red">Next step ▶</button>
+                </li>
+                <li>
+                    <span class="nr-crt">#1</span>
+                    <p>Implement the game functionality:</p>
+                    <ul class="checked">
+                        <li>Play & Pause</li>
+                        <li>Random placement of button upon click</li>
+                        <li>Win/Lose alert messages</li>
+                        <li>PS: make sure the UI gets disabled/enabled accordingly 😉</li>
+                    </ul>
+                    <button data-next="2" class="btn--red">Next step ▶</button>
+                </li>
+                <li>
+                    <span class="nr-crt">#2</span>
+                    <p>
+                        Congrats! You now have a working sollution <span class="heart">❤</span>! But, how scalable it
+                        actually is?
+                    </p>
+                    <p>
+                        To test this I challenge you to add another set of controls to the game and make it so it's in
+                        sync with the other one. Like in this video:
+                    </p>
+                    <video muted autoplay loop>
+                        <source src="assets/duplicate_controls.webm" type="video/webm" />
+                        <source src="assets/duplicate_controls.mp4" type="video/mp4" />
+                        <p>
+                            Your browser doesn't support HTML5 video. Here is a
+                            <a href="assets/duplicate_controls.mp4">link to the video</a> instead.
+                        </p>
+                    </video>
+                    <p>
+                        ✅ If it was easy doing this, then congrats! You have a working game with a great architecture.
+                    </p>
+                    <p>❌ If not, well... jump to the next step and I'll show you my aproach.</p>
+                    <button data-next="3" class="btn--red">Next step ▶</button>
+                </li>
+                <li>
+                    <span class="nr-crt">#3</span>
+                    <p>
+                        I recorded myself explaining & implementing the event-based architecture I used for the final
+                        solution. So, you can watch that or, if you're inpatient to see the code, you can find it in the
+                        <a href="https://github.com/iampava/the-button-game/tree/final">final</a> branch of the repo.
+                    </p>
+                    <iframe
+                        style="margin: 0 auto; display: block; max-width: 100%;"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/bwBlDh1-JqI"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <p>Made with <span class="heart">❤</span> by <a href="https://iampava.com">Pava</a></p>
+            <p>Backgrounds by <a href="https://svgbackgrounds.com">SVGBackgrounds.com</a></p>
+        </footer>
 
+        <script src="landing.js"></script>
+    </body>
 </html>

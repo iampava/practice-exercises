@@ -87,7 +87,6 @@ main {
     border: 1px solid var(--gray);
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to right, var(--green) 0%, var(--green) 20%, #fff 20%, #fff 100%);
 }
 
 .controls__button-wrapper {
