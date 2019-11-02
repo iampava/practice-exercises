@@ -1,0 +1,124 @@
+#%RAML 1.0
+title: practice-ajax
+version: v1
+
+/pets:
+    /:
+        get:
+            description: Read the list of pets
+            queryParameters:
+                name:
+                    type: string
+                    required: false
+                    description: A pet's name - used to get only pets whose names start with this string
+                pageNo:
+                    type: string
+                    required: false
+                    description: Page number - starting at 0
+                pageSize:
+                    type: string
+                    required: false
+                    description: Page size - default: 5
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            responses:
+                200:
+                    description: The entire list of pets or the filtered/paginated list if query params were passed.
+                    body:
+                        application/json:
+                            example: !include examples/GET_pets.json
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+        post:
+            description: Create a new pet
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            body:
+                application/json:
+                    example:  !include examples/POST_pets-req.json
+            responses:
+                200: 
+                    body:
+                        application/json:
+                            example: !include examples/POST_pets-res.json
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+        delete:
+            description: Batch delete of pets
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            body:
+                application/json:
+                    example:  !include examples/DELETE_pets-req.json
+            responses:
+                200: 
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+            
+    /{id}:
+        get:
+            description: Get info about a certain pet
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            responses:
+                200:
+                    body:
+                        application/json:
+                            example: !include examples/GET_pet.json
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+                404:
+                    description: No pet exists with that id
+        put:
+            description: Update a pet's info
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            body:
+                application/json:
+                    example:  !include examples/PUT_pet-req.json
+            responses:
+                200:
+                    body:
+                        application/json:
+                            example: !include examples/PUT_pet-res.json
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+                404:
+                    description: No pet exists with that id
+        delete:
+            description: Delete a pet
+            headers:
+                token:
+                    required: false
+                    description: Authentication token that the server provided. - only if you're running the server in the "auth" mode
+            responses:
+                200:
+                    description: Pet succesfully deleted
+                401:
+                    description: Not authenticated  - only if you're running the server in the "auth" mode
+                404:
+                    description: No pet exists with that id
+/login:
+    post:
+        description: Authenticate user
+        responses:
+            200:
+                headers:
+                    token:
+                        description: Authentication token
+/logout:
+    post:
+        description: Logout the user
+        responses:
+            200:
+                

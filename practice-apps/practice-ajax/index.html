@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Pets | CRUD AJAX practice</title>
+</head>
+
+<body>
+    <header>
+        <h1> 🐶 AJAX Pets 🐱‍👤</h1>
+    </header>
+    <main>
+        <aside>
+            <form id="searchForm">
+                <input type="text" placeholder="Search by name" name="nameInput" />
+                <button type="submit" class="btn">Search</button>
+            </form>
+            <form id="createForm">
+                <input type="text" placeholder="Pet name" required name="nameInput" />
+                <select name="typeInput">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                </select>
+                <button type="submit" class="btn">Create Pet</button>
+            </form>
+            <button type="button" class="btn" id="loginBtn">Login</button>
+            <button type="button" class="btn" id="logoutBtn">Logout</button>
+        </aside>
+        <div id="petsContainer"></div>
+    </main>
+
+    <footer>
+        <span> Made with ❤ by
+            <a href="https://iampava.com" class="link">Pava</a>
+        </span>
+        <div class="blue-bar"></div>
+    </footer>
+    <script src="public/javascript/utils.js"></script>
+    <script src="public/javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
