@@ -1,6 +1,5 @@
 <p align="center">
   <a href="https://iampava.github.io/practice-exercises/practice-apps/offline-game/">
-    <img height="250" src="" />
     <img  height="250" src="https://raw.githubusercontent.com/iampava/practice-exercises/master/practice-apps/offline-game/screenshot.png" style="border: 1px solid grey" />
   </a>
   <br/>
