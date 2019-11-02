@@ -1,0 +1,15 @@
+{
+    "name": "the-button-game",
+    "version": "1.0.0",
+    "author": {
+        "name": "Alexandru Pavaloi",
+        "email": "pava@iampava.com",
+        "url": "https://iampava.com"
+    },
+    "scripts": {
+        "start": "live-server --port=8080 --no-browser"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    }
+}

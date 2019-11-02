@@ -1,0 +1,180 @@
+:root {
+    --black: #1b1b1b;
+    --blue: #3aa3e9;
+    --gray: #bcc2c6;
+    --light-gray: #ddd;
+    --yellow: #f7df1e;
+    --red: #eb4d4b;
+    --green: #27ae60;
+}
+
+body {
+    color: var(--black);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+body * {
+    box-sizing: inherit;
+    outline: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+a,
+a:visited {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: .1em solid var(--gray);
+}
+
+button {
+    border: 1px solid var(--black);
+    background: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--black);
+    color: #fff;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+
+header {
+    text-align: center;
+    font-size: calc(12px + 1.5vw);
+    border-bottom: .2em solid var(--blue);
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    min-height: calc(100% - 10em);
+}
+
+/* Controls panel */
+.controls {
+    flex: 1 0 30%;
+    padding: 0 .5em;
+    margin-right: 5%;
+    border: .2em dashed var(--yellow);
+    max-width: 300px;
+}
+
+.controls>* {
+    margin: .5em 0;
+}
+
+.progress {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    border: 1px solid var(--gray);
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, var(--green) 0%, var(--green) 20%, #fff 20%, #fff 100%);
+}
+
+.controls__button-wrapper {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button {
+    width: 45%;
+    font-size: 1.25em
+}
+
+.controls__timer {
+    text-align: right;
+    padding: .25em .5em;
+    background: var(--light-gray);
+}
+
+/* Game panel */
+.game-area {
+    flex: 1 0 65%;
+    border: .25em dashed var(--gray);
+    height: 60vh;
+    min-height: 450px;
+    position: relative;
+}
+.game-area button {
+    position: absolute;
+    border: .2em solid var(--red);
+    font-weight: bold;
+    top: 43%;
+    left: 43%;
+    font-size: 1.5em;
+}
+.game-area button:hover {
+    background: var(--red);
+}
+
+footer {
+    position: static;
+    padding: 5px 0;
+    border-top: 1px solid var(--gray);
+    line-height: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        margin: .5em 0;
+    }
+    .controls {
+        flex-basis: 100%;
+        margin: 0 0 3em 0;
+        max-width: initial;
+    }
+}
+
+/* GitHub ribbon 3rd party: http://tholman.com/github-corners/ */
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
