@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Second Map</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./openlayers/style.ol.css" type="text/css">
+    <script src="./openlayers/build.ol.js"></script>
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+    <script>
+        var map = new ol.Map({
+            target: 'map',
+            view: new ol.View({
+                center: [0, 0],
+                zoom: 3,
+            }),
+            layers: [new ol.layer.Tile({
+                title: 'Global Imagery',
+                source: new ol.source.TileWMS({
+                    url: 'https://ahocevar.com/geoserver/wms',
+                    serverType: 'mapserver',
+                    params: {
+                        LAYERS: 'nasa:bluemarble',
+                    }
+                })
+            }), ]
+
+        });
+
+
+        function renderChange(e) {
+            myWorker.port.postMessage({
+                type: 'RENDER',
+                data: {
+                    center: e.frameState.viewState.center,
+                    resolution: e.frameState.viewState.resolution
+                }
+            });
+        }
+        if (window.SharedWorker) {
+            var myWorker = new SharedWorker("shared-worker.js");
+
+            myWorker.port.onmessage = function (e) {
+                switch (e.data.type) {
+                    case 'READY':
+                        map.on('postrender', renderChange);
+                        break;
+                    case 'RENDER':
+                        debounce(() => {
+                            map.un('postrender', renderChange);
+                            map.getView().setResolution(e.data.data.resolution);
+                            map.getView().setCenter(e.data.data.center);
+
+                            setTimeout(e => map.on('postrender', renderChange), 200);
+                        }, 75)();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function () {
+                var context = this,
+                    args = arguments;
+                var later = function () {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+    </script>
+
+</body>
+
+</html>

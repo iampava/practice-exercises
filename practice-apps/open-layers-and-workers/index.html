@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sync maps</title>
+    <base href="/GisPicasso/">
+    <link rel="manifest" href="./manifest.json">
+    <style>
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            margin: 0;
+        }
+        
+        .maps {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+            width: 100%;
+        }
+        
+        .map {
+            width: 50%;
+            display: inline-block;
+            font-size: 32px;
+            text-align: center;
+        }
+        
+        .map img {
+            width: 350px;
+            box-sizing: border-box;
+        }
+        
+        .map img:hover {
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        
+        .map a {
+            display: block;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maps">
+        <div class="map left">
+            <img src="img/map1.jpg" onclick="window.open('map1.html')" />
+            <a href="map1.html" target="_blank">Open first map</a>
+        </div>
+        <div class="map right">
+            <img src="img/map2.jpg" onclick="window.open('map2.html')" />
+            <a href="map2.html" target="_blank">Open second map</a>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker-ol.js')
+                .then(() => console.log("Service worker registered!"))
+        }
+    </script>
+</body>
+
+</html>
