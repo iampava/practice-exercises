@@ -1,0 +1,182 @@
+:root {
+  --black: #1b1b1b;
+  --blue: #3aa3e9;
+  --gray: #bcc2c6;
+  --light-gray: #ddd;
+  --yellow: #f7df1e;
+  --red: #eb4d4b;
+  --green: #27ae60;
+}
+
+body {
+  color: var(--black);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body * {
+  box-sizing: inherit;
+  outline: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+a,
+a:visited {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 0.1em solid var(--gray);
+}
+
+button {
+  border: 1px solid var(--black);
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--black);
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+header {
+  text-align: center;
+  font-size: calc(12px + 1.5vw);
+  border-bottom: 0.2em solid var(--blue);
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2em 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  min-height: calc(100% - 10em);
+}
+
+/* Controls panel */
+.controls {
+  flex: 1 0 30%;
+  padding: 0 0.5em;
+  margin-left: 5%;
+  border: 0.2em dashed var(--yellow);
+  max-width: 300px;
+}
+
+.controls > * {
+  margin: 0.5em 0;
+}
+
+label {
+  display: block;
+}
+
+label span {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 0.25em;
+  max-width: 100%;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.controls button {
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.controls__timer {
+  text-align: right;
+  padding: 0.25em 0.5em;
+  background: var(--light-gray);
+}
+
+/* City wrapper */
+ul {
+  list-style: none;
+  margin-bottom: 3em;
+}
+
+.city-wrapper {
+  flex: 1 0 65%;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  min-height: 60vh;
+  min-height: 450px;
+  position: relative;
+}
+
+.city-wrapper > ul {
+  display: inline-block;
+  padding-left: 1em;
+  border-left: 5px dashed var(--blue);
+}
+
+.fam-name {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+}
+
+.people li::before {
+  content: "👨‍💻";
+  margin-right: 0.5em;
+}
+
+.pets li::before {
+  content: "🐶";
+  margin-right: 0.5em;
+}
+
+.people form,
+.pets form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.people form > *,
+.pets form > * {
+  height: 2em;
+  font-size: 1em;
+}
+
+.people li:last-of-type::before,
+.pets li:last-of-type::before {
+  content: none;
+}
+
+/* Footer */
+footer {
+  position: static;
+  padding: 5px 0;
+  border-top: 1px solid var(--gray);
+  line-height: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    margin: 0.5em 0;
+  }
+  .controls {
+    flex-basis: 100%;
+    margin: 0 0 3em 0;
+    max-width: initial;
+  }
+}
