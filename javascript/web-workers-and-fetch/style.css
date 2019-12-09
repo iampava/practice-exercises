@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+
+form {
+  margin-top: 2em;
+  padding: 2em;
+  display: block;
+  position: relative;
+  border: 5px dashed #ccc;
+}
+
+h2 {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  padding: 0 1em;
+  background: #fff;
+  margin: 0;
+  transform: translateY(-50%);
+}
+
+label {
+  display: block;
+  margin-bottom: 2em;
+}
+
+label span {
+  display: block;
+  font-weight: bold;
+}
+
+select,
+input,
+button {
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0.5em 1em;
+}
+
+button {
+  background: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+}
+
+button:active {
+  transform: scale(1.2);
+}
