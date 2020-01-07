@@ -1,15 +1,15 @@
-function sum(...args) {
+export function sum(...args) {
     return args.reduce((acc, curr) => acc + curr, 0);
 }
 
-function diff(...args) {
+export function diff(...args) {
     return args.reduce((acc, curr) => acc - curr);
 }
 
-function mull(...args) {
+export function mull(...args) {
     return args.reduce((acc, curr) => acc * curr, 1);
 }
 
-function div(...args) {
+export function div(...args) {
     return args.reduce((acc, curr) => acc / curr);
 }
